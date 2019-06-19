@@ -9,10 +9,11 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <title>Sourav Badami | Developer, Paranoid and Somnambulist</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript" ></script>
     <link rel=icon href=img/favicon.png> 
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 </head>
 
@@ -28,7 +29,13 @@
             redirectWindow.location;
 		}
 	</script>
-    <header id="top" class="header">
+    <script type="text/javascript">
+       $(function() {
+        var images = ['background1.jpg', 'background2.jpg', 'background3.jpg', 'background4.jpg'];
+        $('#header').css({'background-image': 'url(img/' + images[Math.floor(Math.random() * images.length)] + ')'});
+       });
+    </script>
+    <header id="header" class="header">
         <div class="text-vertical-center">
             <h1>Sourav Badami</h1>
             <h3>Research and Development Engineer.</h3>
