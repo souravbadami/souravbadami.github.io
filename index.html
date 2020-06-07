@@ -8,13 +8,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Sourav Badami | Developer, Paranoid and Somnambulist</title>
+    <title>Sourav Badami - Tinkerer, Technomad and Rational</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript" ></script>
     <link rel=icon href=img/favicon.png> 
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <style type="text/css">
+        /* Split the screen in half */
+        .split {
+          height: 100%;
+          width: 50%;
+          position: fixed;
+          z-index: 1;
+          top: 0;
+          overflow-x: hidden;
+          padding-top: 20px;
+        }
+
+        /* Control the left side */
+        .left {
+          left: 0;
+          background-color: black;
+        }
+
+        /* Control the right side */
+        .right {
+          right: 0;
+          background-color: white;
+        }
+
+        /* If you want the content centered horizontally and vertically */
+        .centered {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          text-align: center;
+        }
+
+        /* Style the image inside the centered container, if needed */
+        .centered img {
+          max-width:auto;
+          max-height:auto;
+        }
+
+        @media only screen and (max-width: 600px) {
+          .split {
+            width: 100%;
+          }
+        }
+    </style>
 </head>
 
 <body>
@@ -33,7 +78,7 @@
     <!--End of Tawk.to Script-->
     <script type="text/javascript">
 		var button = document.createElement("Button");
-		button.style = "bottom:15px;left:15px;position:fixed;z-index: 12;border-radius:100%;background: url('https://www.bugheist.com/static/img/logo.0cc160e97934.png') no-repeat center; height: 50px; width: 50px; outline: none;background-size: 50px 50px;"
+		button.style = "bottom:15px;left:15px;position:fixed;z-index: 12;border-radius:100%;background: url('https://www.bugheist.com/static/img/logo.png') no-repeat center; height: 50px; width: 50px; outline: none;background-size: 50px 50px;"
 		document.body.appendChild(button);
 		var url = window.location.href;
 		var bugheist = 'https://www.bugheist.com/report/?url=' + url;
@@ -46,13 +91,13 @@
        $(function() {
         //var images = ['background1.jpg', 'background2.jpg', 'background3.jpg', 'background4.jpg', 'background5.jpg', 'background6.jpg', 'background7.jpg', 'background8.jpg'];
 	var images = ['background8.jpg'];       
-        $('#header').css({'background-image': 'url(img/' + images[Math.floor(Math.random() * images.length)] + ')'});
+        $('#header').css({'background-image': 'url(https://d2r55xnwy6nx47.cloudfront.net/uploads/2018/03/RecycleNetwork_1300Lede1.jpg)'});
        });
     </script>
-    <header id="header" class="header">
+    <!-- <header id="header" class="header">
         <div class="text-vertical-center">
             <h1>Sourav Badami</h1>
-            <h3>Engineer, Paranoid and Somnambulist</h3>
+            <h2><b>Tinkerer, Technomad and Rational</b></h2>
             <br>
             <a href="https://blog.souravbadami.com" target="_blank"><img src="img/medium.svg" height="40" width="40"></a>&nbsp &nbsp
             <a href="mailto:souravbadami@gmail.com"><img src="img/email.svg" height="40" width="40"></a>&nbsp &nbsp
@@ -63,7 +108,33 @@
             &nbsp &nbsp
             <a href="https://www.linkedin.com/in/souravbadami/" target="_blank"><img src="img/linkedin.svg" height="34" width="34"></a>
         </div>
-    </header>
+    </header> -->
+    <div class="split left">
+      <div class="centered">
+        <img src="https://i.pinimg.com/originals/89/a9/96/89a996ebf8d1d4b029036f9b85a93976.gif" alt="Intelligence">
+        <!-- <h2>Jane Flex</h2>
+        <p>Some text.</p> -->
+      </div>
+    </div>
+
+    <div class="split right">
+      <div class="centered">
+        <div class="text-vertical-center">
+            <img height="100" width="100" style="border-radius: 50%;" src="https://avatars2.githubusercontent.com/u/11073943?s=460&u=ea87246033744473c386787c123a14db3ef444f4&v=4"/>
+            <h1>Sourav Badami</h1>
+            <h3>Tinkerer, Technomad and Rational</h3>
+            <br>
+            <a href="https://blog.souravbadami.com" target="_blank"><img src="img/medium.svg" height="40" width="40"></a>
+            <a href="mailto:souravbadami@gmail.com"><img src="img/email.svg" height="40" width="40"></a>
+            <a href="https://souravbadami.github.io/resume.pdf" target="_blank"><img src="img/resume.svg" height="36" width="36"></a>
+            <a href="https://github.com/souravbadami" target="_blank"><img src="img/github.svg" height="38" width="38"></a>
+            <a href="https://twitter.com/badamisourav" target="_blank"><img src="img/twitter.svg" height="34" width="34"></a>
+            <a href="https://stackoverflow.com/users/4971204/sourav-badami" target="_blank"><img src="img/stackoverflow.svg" height="34" width="34"></a>
+            
+            <a href="https://www.linkedin.com/in/souravbadami/" target="_blank"><img src="img/linkedin.svg" height="34" width="34"></a>
+        </div>
+      </div>
+    </div>
 </body>
 
 </html>
